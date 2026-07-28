@@ -1,0 +1,15 @@
+{
+    "valid":[
+        {"usn":"standard_user","pass":"bank_sauce"},
+        
+        {"usn":"frozen_user","pass":"bank_sauce"},
+        {"usn":"overdraft_user","pass":"bank_sauce"},
+        {"usn":"slow_user","pass":"bank_sauce"},
+        {"usn":"admin_user","pass":"admin_sauce"}],
+    "invalid":[
+        {"usn":"","pass":"bank_sauce"},
+        {"usn":"standard_user","pass":""}
+
+    ]
+
+}
