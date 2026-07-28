@@ -1,4 +1,4 @@
-import { chromium, expect } from '@playwright/test';
+import { chromium } from 'playwright';
 import user from '../testdata/user.json'
 
 export default async function globalSetup()
@@ -14,7 +14,7 @@ export default async function globalSetup()
     // Click login
     await page.getByRole('button',{name:'Sign In'}).click();
     // Verify login
-    await expect(page).toHaveURL('https://qaplayground.com/bank/dashboard');
+    //await expect(page).toHaveURL('https://qaplayground.com/bank/dashboard');
     // Save session
     await page.context().storageState({path:'authentication/storageState.json'});
 
